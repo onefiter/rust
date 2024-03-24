@@ -6,12 +6,23 @@ fn main() {
     v4();
     v5();
     v6();
+    v7();
 }
+
+fn v7() {
+    let (a, mut b): (bool, bool) = (true, false);
+    // a = true,不可变; b = false，可变
+    print!("a = {:?}, b = {:?}", a, b);
+
+    b = true;
+    assert!(a, "{}", b);
+}
+
 fn v6() {
     // 打开注释，会编译报错
     // let guess = "42".parse().expect("Not a number!");
     let guess: u32 = "42".parse().expect("Not a number!");
-    print!("The value of v6 guess is: {}", guess)
+    print!("The value of v6 guess is: {}\n", guess)
 }
 fn v5() {
     // let mut spaces = "  ";
