@@ -1,6 +1,5 @@
-workspace = { members = ["hello"] }
 [package]
-name = "variables"
+name = "charpter_2_0"
 version = "0.1.0"
 edition = "2021"
 

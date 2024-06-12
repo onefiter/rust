@@ -3,9 +3,5 @@
 version = 3
 
 [[package]]
-name = "hello"
-version = "0.1.0"
-
-[[package]]
-name = "variables"
+name = "charpter_2_1_varibles"
 version = "0.1.0"
